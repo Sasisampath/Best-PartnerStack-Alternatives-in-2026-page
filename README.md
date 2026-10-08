@@ -34,7 +34,7 @@ The design includes a plain typographic hero, slim information rail, sticky-note
 
 The vendor data, comparison rows, criteria, FAQs, and editorial paragraphs are unchanged from the supplied buyer guide. Heading capitalization and action labels follow the design brief. Product claims and pricing are supplied editorial copy, not newly researched content.
 
-The About, vendor/partner signup, and policy links use verified destinations on https://www.jazzhq.ai because those pages are not included in the homepage-only source package. The public site was also used to restore the footer links and original illustrations.
+Navigation is standalone: the logo and Home link to `/`, and Assets links to `/assets`. Signup, policy, and JazzHQ article CTA links use `#` placeholders. The homepage is a simple buyer-guide directory. Set `NEXT_PUBLIC_SITE_URL` to this standalone deployment’s origin for canonical and social metadata; the local default is `http://localhost:3000`.
 
 ## Validation
 

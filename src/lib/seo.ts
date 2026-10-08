@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://www.jazzhq.ai";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const SITE_NAME = "JazzHQ";
 export const DEFAULT_TITLE = "JazzHQ";
 export const DEFAULT_DESCRIPTION =

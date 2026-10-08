@@ -81,11 +81,11 @@ export function Footer({ fullNavigation = true }: { fullNavigation?: boolean }) 
               </div>
               {fullNavigation && <nav className="footer-nav-col footer-links" aria-label="Footer navigation">
                 <div className="footer-col"><p className="footer-col-title">Company</p><ul className="footer-list-wrapper">
-                  <li className="footer-list-item"><a className="footer-link" href="https://www.jazzhq.ai/about-us">About us</a></li>
+                  <li className="footer-list-item"><Link className="footer-link" href="/assets">Assets</Link></li>
                 </ul></div>
                 <div className="footer-col"><p className="footer-col-title">Help &amp; Support</p><ul className="footer-list-wrapper">
-                  <li className="footer-list-item"><a className="footer-link" href="https://www.jazzhq.ai/privacy-policy">Privacy policy</a></li>
-                  <li className="footer-list-item"><a className="footer-link" href="https://www.jazzhq.ai/terms-and-conditions">Terms and conditions</a></li>
+                  <li className="footer-list-item"><a className="footer-link" href="#">Privacy policy</a></li>
+                  <li className="footer-list-item"><a className="footer-link" href="#">Terms and conditions</a></li>
                 </ul></div>
               </nav>}
             </div>
@@ -94,7 +94,7 @@ export function Footer({ fullNavigation = true }: { fullNavigation?: boolean }) 
               <p className="footer-copyright">
                 Copyright © Jazz.HQ Inc. {year}
               </p>
-              {fullNavigation && <div className="footer-legal-links"><a className="footer-legal-link" href="https://www.jazzhq.ai/privacy-policy">Privacy Policy</a><a className="footer-legal-link" href="https://www.jazzhq.ai/terms-and-conditions">Terms of Service</a></div>}
+              {fullNavigation && <div className="footer-legal-links"><a className="footer-legal-link" href="#">Privacy Policy</a><a className="footer-legal-link" href="#">Terms of Service</a></div>}
             </div>
           </div>
         </div>

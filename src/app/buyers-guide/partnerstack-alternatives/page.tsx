@@ -606,7 +606,7 @@ export default function PartnerStackAlternativesPage() {
 
               {tool.slug === "jazzhq" && <div className={styles.jazzCta}>
                 <p>Find partners, design the program, and run it in one place.</p>
-                <a href="https://www.jazzhq.ai/for-vendors" className={styles.contextualLink}>Explore JazzHQ <span aria-hidden="true">↗</span></a>
+                <a href="#" className={styles.contextualLink}>Explore JazzHQ <span aria-hidden="true">↗</span></a>
               </div>}
             </section>
           ))}
@@ -712,7 +712,7 @@ export default function PartnerStackAlternativesPage() {
             <div><p className={styles.ctaEyebrow}>BUILD YOUR PARTNER PROGRAM</p>
               <h2 id="guide-cta-title">Find partners, design the program, and run it in one place.</h2>
             </div>
-            <a href="https://www.jazzhq.ai/for-vendors" className={styles.primaryButton}>Explore JazzHQ <span aria-hidden="true">→</span></a>
+            <a href="#" className={styles.primaryButton}>Explore JazzHQ <span aria-hidden="true">→</span></a>
           </section>
         </article>
       </div>

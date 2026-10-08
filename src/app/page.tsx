@@ -1,36 +1,26 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { GridBackground } from "@/components/layout/grid-background";
-import { TopBanner } from "@/components/layout/top-banner";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { TrustedByStrip } from "@/components/home/trusted-by-strip";
-import { DistributionHero } from "@/components/home/distribution/hero";
-import { HowItWorksTabs } from "@/components/home/how-it-works-tabs";
-import { BackedBySection } from "@/components/home/backed-by-section";
-import { JazzClubClose } from "@/components/home/distribution/jazzclub-section";
-import { CustomerProof } from "@/components/home/customer-proof";
-import { pageSeo } from "@/lib/seo";
-import { IS_FIGMA_EXPORT } from "@/lib/figma-export";
-import "@/components/home/distribution/homepage.css";
 
-export const metadata: Metadata = pageSeo({
-  title: "AI Distribution Platform | JazzHQ",
-  description: "JazzHQ connects companies looking for AI with the vendors building it and the trusted partners who can sell, implement and support it.",
-  path: "/",
-});
+export const metadata: Metadata = {
+  title: "Buyer’s Guides | JazzHQ",
+  description: "Independent comparison guides for partner and distribution software.",
+};
 
 export default function HomePage() {
-  return <GridBackground>
-    <TopBanner />
-    <Header />
-    <main className={`dh-home flex-1${IS_FIGMA_EXPORT ? " dh-figma-export" : ""}`}>
-      <DistributionHero />
-      <TrustedByStrip />
-      <HowItWorksTabs />
-      <BackedBySection />
-      <CustomerProof />
-      <JazzClubClose />
-    </main>
-    <Footer />
-  </GridBackground>;
+  return (
+    <GridBackground>
+      <Header />
+      <main className="mx-auto w-full max-w-[1400px] flex-1 px-6 py-24 text-[#242424] lg:px-16">
+        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Buyer’s Guides</h1>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#6A7077]">Independent comparison guides for partner and distribution software.</p>
+        <Link href="/buyers-guide/partnerstack-alternatives" className="mt-8 inline-flex rounded-xl bg-[#564EF0] px-5 py-3 text-sm font-semibold text-white">
+          View PartnerStack Alternatives
+        </Link>
+      </main>
+      <Footer />
+    </GridBackground>
+  );
 }

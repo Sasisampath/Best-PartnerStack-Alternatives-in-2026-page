@@ -13,7 +13,7 @@ export function Header({ fullNavigation = true }: { fullNavigation?: boolean }) 
       <div className="mx-auto max-w-[1400px] px-6 lg:px-16">
         <nav className="relative flex h-[72px] items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="shrink-0">
+          <Link href="/" className="shrink-0" onClick={() => setMenuOpen(false)}>
             <Image
               src="/assets/logo/jazzhq.svg"
               alt="JazzHQ"
@@ -25,20 +25,20 @@ export function Header({ fullNavigation = true }: { fullNavigation?: boolean }) 
           </Link>
 
           {fullNavigation && <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
-            <Link href="/">Home</Link>
-            <a href="https://www.jazzhq.ai/about-us">About Us</a>
+            <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href="/assets" onClick={() => setMenuOpen(false)}>Assets</Link>
           </div>}
           {/* Right Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={fullNavigation ? "https://www.jazzhq.ai/for-vendors" : undefined}
+              href="#"
               className="rounded-xl bg-[#5048E5] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#4039D4]"
             >
               List Your Product
             </a>
 
             <a
-              href={fullNavigation ? "https://www.jazzhq.ai/for-partners" : undefined}
+              href="#"
               className="rounded-xl bg-[#E84545] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#D43838]"
             >
               Become a Partner
@@ -64,10 +64,10 @@ export function Header({ fullNavigation = true }: { fullNavigation?: boolean }) 
         {menuOpen && (
           <div id="site-mobile-menu" className="flex flex-col gap-3 border-t border-[#E5E2D9] py-4 lg:hidden">
             {fullNavigation && <div className="flex flex-col gap-4 py-3 text-sm font-medium">
-              <Link href="/">Home</Link><a href="https://www.jazzhq.ai/about-us">About Us</a>
+              <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link><Link href="/assets" onClick={() => setMenuOpen(false)}>Assets</Link>
             </div>}
             <a
-              href={fullNavigation ? "https://www.jazzhq.ai/for-vendors" : undefined}
+              href="#"
               className="rounded-xl bg-[#5048E5] px-4 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setMenuOpen(false)}
             >
@@ -75,7 +75,7 @@ export function Header({ fullNavigation = true }: { fullNavigation?: boolean }) 
             </a>
 
             <a
-              href={fullNavigation ? "https://www.jazzhq.ai/for-partners" : undefined}
+              href="#"
               className="rounded-xl bg-[#E84545] px-4 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setMenuOpen(false)}
             >
