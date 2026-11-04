@@ -329,3 +329,45 @@
   .endCta h2 { font-size: 28px; }
   .endCta .primaryButton { width: 100%; }
 }
+
+/* Opaque reading surfaces keep the original grid visible around the article. */
+.introBlock,
+.section,
+.toolSection,
+.verdict {
+  background: #fff;
+  border: 1px solid #e7e3da;
+  border-radius: 16px;
+  padding-inline: 28px;
+}
+.introBlock { padding-top: 28px; }
+.section { margin-bottom: 32px; }
+.toolSection { padding-bottom: 28px; }
+.verdict { margin-bottom: 32px; }
+/* Keep the hero canvas exposed while shielding its explanatory text. */
+.heroCopy > p,
+.heroMeta {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.heroCard { background: #fff; border-color: #e7e3da; }
+.jumpCard:first-child { background: #f1eeff; }
+.tableShell { background: #fff; }
+.faqList { display: grid; gap: 16px; border-top: 0; }
+.faqItem {
+  background: #fff;
+  border: 1px solid #e7e3da;
+  border-radius: 12px;
+  padding-inline: 24px;
+}
+.faqItem summary { padding-block: 24px; }
+.faqItem p { margin-bottom: 24px; padding-right: 0; }
+@media (max-width: 639px) {
+  .introBlock, .section, .toolSection, .verdict { padding-inline: 18px; }
+  .introBlock { padding-top: 24px; }
+  .heroCopy > p, .heroMeta { padding: 18px; }
+  .faqItem { padding-inline: 18px; }
+  .faqItem summary { gap: 16px; padding-block: 20px; }
+  .faqItem p { margin-bottom: 20px; }
+}
