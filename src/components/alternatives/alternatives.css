@@ -19,9 +19,4 @@
 .alternative-card h2{font-size:28px;line-height:1.25;letter-spacing:-.035em;font-weight:600;margin:16px 0}
 .alternative-card p{color:#6a7077;font-size:15px;line-height:1.8}
 .alternative-card__action{display:flex;justify-content:space-between;color:#564ef0;font-weight:600;font-size:14px;margin-top:24px}
-.sidebar-cta{padding:20px;background:#f1eeff;border:1px solid #e7e3da;border-radius:16px;color:#242424}
-.sidebar-cta h3{font-weight:600;font-size:17px;line-height:1.35;margin:0 0 10px}
-.sidebar-cta p{color:#6a7077;font-size:13px;line-height:1.6;margin:0 0 16px}
-.sidebar-cta button{width:100%;padding:12px 10px;background:#564ef0;color:#fff;border-radius:8px;font-size:13px;font-weight:600;cursor:default}
-.sidebar-cta small{display:block;font-size:10px;font-weight:400;margin-top:3px}
 @media(max-width:639px){.alternatives-gallery{padding:36px 20px 64px}.alternatives-gallery__intro{padding:24px}.alternative-card{grid-template-columns:1fr}.alternative-card__copy{padding:24px}.alternative-card h2{font-size:25px}}

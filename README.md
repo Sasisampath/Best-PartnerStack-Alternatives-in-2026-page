@@ -19,10 +19,10 @@ Checks: `npm run typecheck`, `npm run lint`, `npm run build`. Existing Google Fo
 - `src/components/shared/footer*`: reference footer, AI actions, trust tooltips and closing wordmark.
 - `src/data/navigation.ts`: approved standalone link map. Unavailable destinations are visibly disabled; no production-site signup or Marketplace links.
 - `src/data/alternatives.ts`: published article registry and optional verified editorial metadata. Reading time uses the actual rendered article word count (3,409 words) at 225 words/minute. Recount when editorial copy changes.
-- `src/components/alternatives`: reusable gallery card, breadcrumbs, optional article metadata and sidebar CTA.
-- `src/app/alternatives/partnerstack-alternatives`: preserved article, white reading surfaces, TOC, tables, FAQs and progress bar.
+- `src/components/alternatives`: reusable gallery card, breadcrumbs, optional article metadata.
+- `src/app/alternatives/partnerstack-alternatives`: preserved article, white reading surfaces, centered reading cards, tables, FAQs and progress bar.
 
-No author, author photo, role or publication history was supplied; these fields are omitted until verified information is available. Signup journeys and the new sidebar action remain disabled until an approved standalone destination exists. Existing article CTA destinations are preserved.
+No author, author photo, role or publication history was supplied; these fields are omitted until verified information is available. Signup journeys remain disabled until an approved standalone destination exists. Existing article CTA destinations are preserved.
 
 Set `NEXT_PUBLIC_SITE_URL` to this deployment’s origin for absolute canonical/social metadata. The development fallback is `http://localhost:3000`; no production domain is assumed.
 

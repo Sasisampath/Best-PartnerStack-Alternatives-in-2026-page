@@ -18,6 +18,3 @@ export function ArticleMetadata({article}:{article:AlternativeArticle}) {
   {article.updatedAt && <span>Updated <time dateTime={article.updatedAt}>{article.updatedAt}</time></span>}
  </div>;
 }
-export function StickySidebarCTA(){
- return <div className="sidebar-cta"><h3>See JazzHQ in action</h3><p>Explore how JazzHQ helps teams find and manage partners.</p><button type="button" disabled>Explore JazzHQ → <small>Coming soon</small></button></div>;
-}

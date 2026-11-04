@@ -7,7 +7,7 @@ import { GridBackground } from "@/components/layout/grid-background";
 import { Header } from "@/components/layout/header";
 import { TopBanner } from "@/components/layout/top-banner";
 import { Footer } from "@/components/layout/footer";
-import { TableOfContents } from "./table-of-contents";
+import { ReadingProgress } from "./reading-progress";
 
 export const metadata: Metadata = {
   title: "Best PartnerStack Alternatives in 2026 | JazzHQ",
@@ -486,7 +486,7 @@ export default function PartnerStackAlternativesPage() {
       </section>
 
       <div className={styles.layout}>
-        <TableOfContents vendors={tools.map(({ slug, name }) => ({ slug, name }))} />
+        <ReadingProgress />
 
         <article className={styles.article}>
           <section className={styles.introBlock}>
