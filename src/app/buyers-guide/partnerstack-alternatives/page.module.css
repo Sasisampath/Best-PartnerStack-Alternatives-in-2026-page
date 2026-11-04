@@ -340,7 +340,7 @@
   border-radius: 16px;
   padding-inline: 28px;
 }
-.introBlock { padding-top: 28px; }
+.introBlock { padding: 40px; margin-bottom: 24px; }
 .section { margin-bottom: 32px; }
 .toolSection { padding-bottom: 28px; }
 .verdict { margin-bottom: 32px; }
@@ -365,9 +365,12 @@
 .faqItem p { margin-bottom: 24px; padding-right: 0; }
 @media (max-width: 639px) {
   .introBlock, .section, .toolSection, .verdict { padding-inline: 18px; }
-  .introBlock { padding-top: 24px; }
+  .introBlock { padding: 24px; margin-bottom: 16px; }
   .heroCopy > p, .heroMeta { padding: 18px; }
   .faqItem { padding-inline: 18px; }
   .faqItem summary { gap: 16px; padding-block: 20px; }
   .faqItem p { margin-bottom: 20px; }
 }
+
+/* Match both contents panels to the article reading surfaces. */
+.tocInner, .mobileToc { background: #fff; border-color: #e7e3da; }
