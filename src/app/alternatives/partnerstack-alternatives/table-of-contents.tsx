@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { StickySidebarCTA } from "@/components/alternatives/article-editorial";
 import styles from "./page.module.css";
 
 type Vendor = { slug: string; name: string };
@@ -78,7 +79,7 @@ export function TableOfContents({ vendors }: { vendors: Vendor[] }) {
   return <>
     <div className={styles.readingProgress} role="progressbar" aria-label="Article reading progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}><span style={{ transform: `scaleX(${progress / 100})` }} /></div>
     <aside ref={aside} className={styles.toc} aria-label="Table Of Contents">
-      <div ref={panel} className={styles.tocInner}><p>Table Of Contents</p>{nav}</div>
+      <div className={styles.sidebarStack}><div ref={panel} className={styles.tocInner}><p>Table Of Contents</p>{nav}</div><StickySidebarCTA /></div>
       <details className={styles.mobileToc}><summary><span>Table Of Contents<small>{links.find((link) => link.slug === active)?.name ?? "Key takeaways"}</small></span><b aria-hidden="true">+</b></summary>{nav}</details>
     </aside>
   </>;

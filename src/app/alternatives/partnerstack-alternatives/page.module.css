@@ -374,3 +374,9 @@
 
 /* Match both contents panels to the article reading surfaces. */
 .tocInner, .mobileToc { background: #fff; border-color: #e7e3da; }
+
+/* One sticky stack reserves room for the contextual CTA beneath the TOC. */
+.sidebarStack { position:sticky;top:calc(var(--guide-header-height) + 20px);display:flex;flex-direction:column;gap:16px;max-height:calc(100dvh - var(--guide-header-height) - 40px); }
+.sidebarStack .tocInner { position:static;min-height:100px;max-height:none;flex:1;overflow:auto;overscroll-behavior:auto; }
+.sidebarStack > :last-child { flex-shrink:0; }
+@media(max-width:1023px){.sidebarStack{display:none}}

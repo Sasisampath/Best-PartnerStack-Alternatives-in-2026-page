@@ -1,0 +1,27 @@
+.article-breadcrumb {display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;color:#6a7077;font-size:12px;line-height:1.6;margin-bottom:24px}
+.article-breadcrumb a:hover{color:#564ef0}
+.article-metadata {display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;color:#6a7077;font-size:13px;margin:0 0 24px}
+.article-author {display:flex;align-items:center;gap:10px;color:#242424}
+.article-author img{border-radius:50%;object-fit:cover}
+.article-author small{display:block;color:#6a7077}
+.alternatives-gallery{max-width:1200px;width:100%;margin:auto;padding:64px 40px 100px;flex:1}
+.alternatives-gallery__intro{background:#fff;border:1px solid #e7e3da;border-radius:16px;padding:40px;max-width:900px}
+.alternatives-gallery h1{font-size:clamp(36px,5vw,56px);font-weight:600;letter-spacing:-.045em;line-height:1.15;color:#242424;margin:18px 0}
+.alternatives-gallery__intro>p:last-child{font-size:17px;line-height:1.8;color:#6a7077;max-width:650px}
+.alternatives-gallery__list{margin-top:32px}
+.alternative-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);max-width:1000px;background:#fff;border:1px solid #e7e3da;border-radius:16px;overflow:hidden;color:#242424}
+.alternative-card:hover{border-color:#564ef0}
+.alternative-card:focus-visible{outline:3px solid #564ef0;outline-offset:5px}
+.alternative-card__image{padding:24px;background:#f1eeff;display:flex;align-items:center}
+.alternative-card__image img{width:100%;height:auto;border-radius:8px}
+.alternative-card__copy{padding:32px}
+.alternative-card__label{font-size:10px;letter-spacing:.1em;color:#6a7077;font-weight:600}
+.alternative-card h2{font-size:28px;line-height:1.25;letter-spacing:-.035em;font-weight:600;margin:16px 0}
+.alternative-card p{color:#6a7077;font-size:15px;line-height:1.8}
+.alternative-card__action{display:flex;justify-content:space-between;color:#564ef0;font-weight:600;font-size:14px;margin-top:24px}
+.sidebar-cta{padding:20px;background:#f1eeff;border:1px solid #e7e3da;border-radius:16px;color:#242424}
+.sidebar-cta h3{font-weight:600;font-size:17px;line-height:1.35;margin:0 0 10px}
+.sidebar-cta p{color:#6a7077;font-size:13px;line-height:1.6;margin:0 0 16px}
+.sidebar-cta button{width:100%;padding:12px 10px;background:#564ef0;color:#fff;border-radius:8px;font-size:13px;font-weight:600;cursor:default}
+.sidebar-cta small{display:block;font-size:10px;font-weight:400;margin-top:3px}
+@media(max-width:639px){.alternatives-gallery{padding:36px 20px 64px}.alternatives-gallery__intro{padding:24px}.alternative-card{grid-template-columns:1fr}.alternative-card__copy{padding:24px}.alternative-card h2{font-size:25px}}
