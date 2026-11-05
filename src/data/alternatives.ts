@@ -13,4 +13,13 @@ export const partnerstackGuide: AlternativeArticle = {
   // Recount when editorial copy changes; no author or publication history supplied.
   wordCount: 3409,
 };
+// DRAFT: deliberately NOT in alternativeArticles (gallery) until editorial review is complete.
+export const salesforceGuide: AlternativeArticle = {
+  slug: "salesforce-prm-alternatives",
+  title: "Best Salesforce PRM Alternatives in 2026",
+  description: "Compare ten alternatives to Salesforce PRM by features, best fit, and what you can expect to pay.",
+  image: "/buyers-guide/partnerstack/jazzhq.png",
+  // Estimated from rendered text, scaled to the PartnerStack counting method. Recount after edits.
+  wordCount: 4290,
+};
 export const alternativeArticles = [partnerstackGuide];

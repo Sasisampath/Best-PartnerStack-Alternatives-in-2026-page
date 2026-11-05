@@ -450,7 +450,7 @@ export default function PartnerStackAlternativesPage() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <ArticleBreadcrumb title={partnerstackGuide.title} />
+          <ArticleBreadcrumb title={partnerstackGuide.title} path="/alternatives/partnerstack-alternatives" />
           <div className={styles.eyebrow}>BUYER'S GUIDE <span>2026</span></div>
           <h1><span>Best PartnerStack</span><span>Alternatives in 2026</span></h1>
           <ArticleMetadata article={partnerstackGuide} />

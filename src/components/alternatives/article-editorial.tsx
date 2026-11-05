@@ -3,10 +3,10 @@ import Image from "next/image";
 import { readingMinutes, type AlternativeArticle } from "@/data/alternatives";
 import "./alternatives.css";
 
-export function ArticleBreadcrumb({ title }: { title: string }) {
+export function ArticleBreadcrumb({ title, path }: { title: string; path: string }) {
   const data = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[
     {"@type":"ListItem",position:1,name:"Alternatives",item:"/alternatives"},
-    {"@type":"ListItem",position:2,name:title,item:"/alternatives/partnerstack-alternatives"},
+    {"@type":"ListItem",position:2,name:title,item:path},
   ]};
   return <><nav className="article-breadcrumb" aria-label="Breadcrumb"><Link href="/alternatives">Alternatives</Link><span aria-hidden="true">›</span><span aria-current="page">{title}</span></nav><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data)}} /></>;
 }
