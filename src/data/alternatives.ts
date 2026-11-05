@@ -20,6 +20,6 @@ export const salesforceGuide: AlternativeArticle = {
   description: "Compare ten alternatives to Salesforce PRM by features, best fit, and what you can expect to pay.",
   image: "/buyers-guide/partnerstack/jazzhq.png",
   // Estimated from rendered text, scaled to the PartnerStack counting method. Recount after edits.
-  wordCount: 4290,
+  wordCount: 4439,
 };
 export const alternativeArticles = [partnerstackGuide];

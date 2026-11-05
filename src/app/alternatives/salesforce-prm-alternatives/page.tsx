@@ -117,12 +117,17 @@ const tools: Tool[] = [
     ],
     considerationsLabel: "Things to consider",
     considerations: [
-      "Pricing isn't published, so you'll need to book a demo to get a number.",
+      "Published pricing starts at $1,500/month, higher than entry-level tools such as Kiflo's $399/month.",
       "It is aimed at mature partner operations, so it can be more than a first-time program needs.",
       "The deepest customization uses developer tooling, which assumes technical resources.",
       "Implementation speeds quoted above are the vendor's own claims.",
     ],
-    pricing: ["Pricing isn't publicly listed. You can book a demo to get started.", "No free trial is mentioned on the vendor's website."],
+    pricing: [
+      "Essentials is $1,500/month and Advanced is $3,000/month. Unlimited is contact-sales only.",
+      "Annual pricing is available on request, and month-to-month billing carries a 10% surcharge.",
+      "No setup or onboarding fees, and standard implementation is included.",
+      "The plan cards say 'Try for 1 month,' but the FAQ says free trials aren't offered, so confirm trial terms with Magentrix.",
+    ],
     image: "/buyers-guide/salesforce-prm/magentrix.webp",
     imageAlt: "Magentrix homepage hero reading The Data Foundation for Channel Sales, with a graphic of CRM records mirrored in Magentrix PRM",
     accent: "yellow",
@@ -147,7 +152,7 @@ const tools: Tool[] = [
       "Transparent public pricing starting at $399/month, compared with Salesforce's per-member licences that sit on top of a Sales Cloud subscription.",
       "Native two-way Salesforce and HubSpot integration.",
       "Account mapping and co-selling built in.",
-      "Fast setup, Kiflo says teams deploy in days, along with instant self-onboarding.",
+      "Fast setup, Kiflo says teams are live in under a week once the CRM is connected and partners are added.",
     ],
     considerationsLabel: "Things to consider",
     considerations: [
@@ -223,14 +228,16 @@ const tools: Tool[] = [
     ],
     considerationsLabel: "Things to consider",
     considerations: [
-      "Pricing isn't published, and no free trial is mentioned.",
+      "Annual billing plus a one-time setup fee, so first-year cost is higher than the monthly figure suggests.",
       "The platform is aimed at enterprises, so a smaller program may find it heavier than needed.",
       "The website doesn't list specific CRM integrations, so confirm Salesforce and HubSpot support during evaluation.",
       "Ratings quoted on its website (such as a 4.9 G2 rating) are as reported by ZINFI.",
     ],
     pricing: [
-      "Pricing isn't publicly listed. You can request a demo.",
-      "No free trial is mentioned, but a self-guided product tour with sample data is available.",
+      "Starter starts at $1,450/month ($17,400/year) with 6 lifecycle apps and a $3,480 setup fee.",
+      "Professional starts at $2,350/month ($28,200/year) with 10 apps and a $5,640 setup fee.",
+      "Enterprise is custom, covers all 30 apps, and has setup at 20% of the Year-1 price.",
+      "All prices are billed annually. No free trial is mentioned, but a demo and a self-guided product tour with sample data are available.",
     ],
     image: "/buyers-guide/salesforce-prm/zinfi.webp",
     imageAlt: "ZINFI partner portal Market section with sample data, showing co-branded marketing campaigns and its Multi-Touch, Email and Social options",
@@ -259,12 +266,14 @@ const tools: Tool[] = [
     ],
     considerationsLabel: "Things to consider",
     considerations: [
-      "Pricing and tiers aren't listed, and no free trial is mentioned.",
+      "Pricing starts at $50k per module annually, which puts it at the enterprise end of this list.",
       "The website doesn't name specific CRMs, so confirm Salesforce and HubSpot integration depth directly.",
       "Positioned for enterprise channel leaders, so it may be more than a small program needs.",
     ],
     pricing: [
-      "Pricing isn't publicly listed. The vendor describes it as transparent and modular, with no forced bundles.",
+      "Pricing starts at $50k per module annually, with custom quotes.",
+      "Fixed per program, with no usage-based fees, bundles, or add-ons, and held for the contract term.",
+      "Implementation, configuration, integrations, support, and a dedicated Customer Success Manager are included.",
       "No free trial is mentioned on the vendor's website.",
     ],
     image: "/buyers-guide/salesforce-prm/channelscaler.webp",
@@ -297,7 +306,10 @@ const tools: Tool[] = [
       "Complex to implement for large, tiered channel structures.",
       "Built for established mid-market and enterprise channels, so it can be heavier than a small team needs.",
     ],
-    pricing: ["You can book a demo to get started.", "Paid plans are custom."],
+    pricing: [
+      "You can book a demo to get started.",
+      "Three plans (Activate, Grow, Scale) are listed with partner-organization limits, but prices aren't published.",
+    ],
     image: "/buyers-guide/partnerstack/unifyr.png",
     imageAlt: "Unifyr agentic partner experience platform",
     accent: "yellow",
@@ -359,7 +371,7 @@ const tools: Tool[] = [
       "Strong, responsive support.",
       "A dedicated Salesforce edition, so you can keep Salesforce as your CRM.",
       "Configurable in real time, admins can build modules and reports themselves.",
-      "Enterprise security: SOC 2, GDPR and a 99.50% uptime SLA.",
+      "Enterprise security: SOC 2, GDPR and a 99.9% uptime SLA.",
     ],
     considerationsLabel: "Things to consider",
     considerations: [
@@ -371,7 +383,7 @@ const tools: Tool[] = [
     pricing: [
       "You can book a demo and talk to their sales team.",
       "Pricing is quote-based.",
-      "Channeltivity offers three tiers: Growth, Mid-Market, Enterprise.",
+      "Channeltivity describes three program stages, Growth, Mid-Market, and Enterprise, rather than priced plans.",
     ],
     image: "/buyers-guide/partnerstack/channeltivity.png",
     imageAlt: "Channeltivity channel management platform",
@@ -406,6 +418,7 @@ const tools: Tool[] = [
       "It leans heavily on your CRM, so a messy or poorly maintained CRM causes problems.",
       "Some navigation and workflow customization limitations.",
       "Native account mapping could be limited.",
+      "Salesforce isn't listed on the Pro plan's feature list, so check which plan includes it.",
     ],
     pricing: [
       "There's a free Starter plan for 1 partner.",
@@ -433,11 +446,11 @@ const quickAlternatives = [
 
 const comparison = [
   ["JazzHQ", "Building a partner program from scratch", "Partner marketplace, program strategy, AI assistant, execution team", "Custom"],
-  ["Magentrix", "Enterprise teams with complex CRM environments", "No-code PaaS portal, CRM mirroring (Salesforce, HubSpot, Dynamics), LMS, MDF, AI agent", "Not published, demo available"],
+  ["Magentrix", "Enterprise teams with complex CRM environments", "No-code PaaS portal, CRM mirroring (Salesforce, HubSpot, Dynamics), LMS, MDF, AI agent", "From $1,500/mo (Essentials), trial terms unclear"],
   ["Kiflo", "An affordable first partner program", "Partner management, account mapping, co-selling, commission automation", "From $399/mo (25 partners), 14-day free trial"],
   ["Euler", "AI-automated partner operations", "AI agents for deal registration, partner ops and account management, Partner Directory", "Not published, demo available"],
-  ["ZINFI", "Enterprises wanting one full-lifecycle suite", "30 applications across onboarding, enablement, marketing, selling, incentives; optional AI", "Not published, demo and self-guided tour"],
-  ["Channelscaler", "Multi-tier enterprise channels", "Deal registration, incentives (rebates, SPIFFs, MDF), tiering, sales-out reporting", "Not published, described as modular"],
+  ["ZINFI", "Enterprises wanting one full-lifecycle suite", "30 applications across onboarding, enablement, marketing, selling, incentives; optional AI", "From $1,450/mo billed annually, plus setup fee"],
+  ["Channelscaler", "Multi-tier enterprise channels", "Deal registration, incentives (rebates, SPIFFs, MDF), tiering, sales-out reporting", "From $50k per module per year"],
   ["Unifyr", "Established channels that market through partners", "PRM + TCMA, built-in LMS, MDF/co-op funds, Unifyr IQ agentic AI", "Custom"],
   ["Impartner", "Salesforce-centric enterprises wanting a dedicated PRM", "Native Salesforce sync, partner marketing, lead management, Aimi AI", "Not published, third-party figures conflict"],
   ["Channeltivity", "A fast, structured mid-market channel program", "Partner recruitment, deal registration, self-serve portal, analytics", "Quote-based"],
@@ -490,7 +503,7 @@ const faqs = [
   },
   {
     q: "How long does it take to implement Salesforce PRM compared to other PRM platforms?",
-    a: "Salesforce doesn't publish a typical implementation timeline, and setup usually involves a Salesforce admin or implementation partner, so the honest answer is that it depends on your org. For comparison, Magentrix says most customers go live in about five weeks, Kiflo says teams deploy in days, and Introw says most teams launch in days to a few weeks. These are vendor claims, so ask each one for references.",
+    a: "Salesforce doesn't publish a typical implementation timeline, and setup usually involves a Salesforce admin or implementation partner, so the honest answer is that it depends on your org. For comparison, Magentrix says most customers go live in about five weeks, Kiflo says teams are live in under a week, and Introw says most teams launch in days to a few weeks. These are vendor claims, so ask each one for references.",
   },
   {
     q: "Which Salesforce PRM alternative is best for enterprise channel programs?",
