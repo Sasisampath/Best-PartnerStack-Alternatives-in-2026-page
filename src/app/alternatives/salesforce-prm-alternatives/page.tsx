@@ -2,7 +2,7 @@
 /*
  * DRAFT — research-backed copy awaiting editorial approval.
  * - Reuses the approved PartnerStack page's CSS module and reading-progress component.
- * - Product selection (10 of 12 candidates) is provisional.
+ * - Product selection (10 of 12 candidates) approved by the team; copy still needs editorial review.
  * - Kept out of search indexing, the Alternatives gallery and the footer until reviewed.
  */
 import type { Metadata } from "next";
