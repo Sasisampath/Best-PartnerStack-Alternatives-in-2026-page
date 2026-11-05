@@ -33,6 +33,11 @@ const imageDimensions: Record<string, readonly [number, number]> = {
   channeltivity: [2048, 1064],
   unifyr: [2048, 1061],
   introw: [2048, 1064],
+  magentrix: [2000, 1097],
+  euler: [2000, 1014],
+  zinfi: [2000, 943],
+  channelscaler: [2000, 1096],
+  impartner: [2000, 939],
 };
 
 type Tool = {
@@ -118,6 +123,8 @@ const tools: Tool[] = [
       "Implementation speeds quoted above are the vendor's own claims.",
     ],
     pricing: ["Pricing isn't publicly listed. You can book a demo to get started.", "No free trial is mentioned on the vendor's website."],
+    image: "/buyers-guide/salesforce-prm/magentrix.webp",
+    imageAlt: "Magentrix homepage hero reading The Data Foundation for Channel Sales, with a graphic of CRM records mirrored in Magentrix PRM",
     accent: "yellow",
   },
   {
@@ -186,6 +193,8 @@ const tools: Tool[] = [
       "Customer results on its website (such as 4x partner-sourced revenue growth) are self-reported.",
     ],
     pricing: ["Pricing isn't publicly listed. You can book a demo to get started.", "No free trial is mentioned on the vendor's website."],
+    image: "/buyers-guide/salesforce-prm/euler.webp",
+    imageAlt: "Euler homepage hero reading Scalable Partner Operations. Predictable Partner Revenue. Agentic PRM.",
     accent: "lime",
   },
   {
@@ -223,6 +232,8 @@ const tools: Tool[] = [
       "Pricing isn't publicly listed. You can request a demo.",
       "No free trial is mentioned, but a self-guided product tour with sample data is available.",
     ],
+    image: "/buyers-guide/salesforce-prm/zinfi.webp",
+    imageAlt: "ZINFI partner portal Market section with sample data, showing co-branded marketing campaigns and its Multi-Touch, Email and Social options",
     accent: "purple",
   },
   {
@@ -256,6 +267,8 @@ const tools: Tool[] = [
       "Pricing isn't publicly listed. The vendor describes it as transparent and modular, with no forced bundles.",
       "No free trial is mentioned on the vendor's website.",
     ],
+    image: "/buyers-guide/salesforce-prm/channelscaler.webp",
+    imageAlt: "Channelscaler homepage hero reading Partner Ecosystem Expertise Meets AI-Powered Execution",
     accent: "coral",
   },
   {
@@ -322,6 +335,8 @@ const tools: Tool[] = [
       "Pricing isn't publicly listed on the vendor's website. Expect a custom quote.",
       "Third-party sites (Capterra, Software Advice, TrustRadius, G2) list conflicting figures, so we haven't included a starting price.",
     ],
+    image: "/buyers-guide/salesforce-prm/impartner.webp",
+    imageAlt: "Impartner homepage hero reading Welcome to PRM 3.0, with a partner portal dashboard and the Aimi AI assistant",
     accent: "purple",
   },
   {
