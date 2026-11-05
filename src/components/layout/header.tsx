@@ -73,7 +73,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href={ROUTES.home} className="site-header__logo" aria-label="JazzHQ home">
+        <Link href={ROUTES.home} className="site-header__logo" aria-label="JazzHQ alternatives">
           <Image src="/assets/logo/jazzhq.svg" alt="JazzHQ" width={132} height={32} priority />
         </Link>
 

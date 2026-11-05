@@ -1,6 +1,13 @@
 export type NavDestination = string | null;
 export const ROUTES = { home: "/alternatives" } as const;
-export const NAV_ITEMS = [{ label: "Alternatives", href: ROUTES.home }];
+// These global destinations are not available in the standalone build.
+export const NAV_ITEMS: { label: string; href: NavDestination }[] = [
+  { label: "Home", href: null },
+  { label: "About Us", href: null },
+  { label: "Events", href: null },
+  { label: "Marketplace", href: null },
+  { label: "Stories", href: null },
+];
 export type JourneyKey = "buyer" | "vendor" | "partner";
 export const JOURNEYS: {key: JourneyKey; title: string; description: string; href: NavDestination}[] = [
  {key:"buyer",title:"I’m an AI Buyer",description:"Find AI solutions · Coming soon",href:null},
